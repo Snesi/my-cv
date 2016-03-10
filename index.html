@@ -40,13 +40,17 @@
             border-radius: 5px;
             background-color: #EBE9E9;   
         }
-        .experience .job:before {
-            width: 3px;
-            height: 80%;
-            background-color: #353535;
-            content: '';
+        .job {
             position: relative;
-            display: block;
+        }
+        .experience .job:before {
+            content: " ";
+            position: absolute;
+            z-index: -1;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            border: 5px solid #EBE9E9;
         }
 
     </style>
