@@ -28,8 +28,27 @@
             margin-bottom: 35px;
         }
         .experience {
-            list-style: none;   
+            list-style: none;
+            position: relative;   
         }
+        .experience .period {
+            display: inline-block;
+            position: relative;
+            left: -100px;
+            padding: 5px 10px;
+            top: 48px;
+            border-radius: 5px;
+            background-color: #EBE9E9;   
+        }
+        .experience .job:before {
+            width: 3px;
+            height: 80%;
+            background-color: #353535;
+            content: '';
+            position: relative;
+            display: block;
+        }
+
     </style>
 </head>
 
@@ -86,19 +105,157 @@
                     <li class="period"><span class="from">22/01/16</span> - <span class="to">Current</span></li>
                     <li class="job">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-11 col-md-offset-1">
                                 <h3><strong>Full Stack Developer</strong>, GetFinancing</h3> 
-                                <p></p>       
+                                <p><strong>Tech Stack: </strong>jQuery, Bootstrap, Django, Twisted</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Improving the FrontEnd of GetFinancing's funnel, portal and website.</li>
+                                    <li>Adding new features in the Backend when necessary.</li>
+                                    <li>Fixing bugs and refactoring.</li>
+                                    <li>Adapting lender's funnel to our funnel.</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Added cart summary and user info to the funnel for contextual information.</li>
+                                    <li>Fixed lender's css.</li>
+                                    <li>Added responsiveness to the funnel.</li>
+                                    <li>Redesigned the whole Portal.</li>
+                                </ul>       
                             </div>
                         </div>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="period"><span class="from">01/02/15</span> - <span class="to">21/01/16</span></li>
+                    <li class="job">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3><strong>Lead FrontEnd</strong>, MOCA (InnoQuant) </h3>
+                                <p><strong>Tech Stack: </strong>Backbone.js, Marionette.js, D3.js, Highcharts.js, jQuery, Bootstrap, node.js, Wordpress, AWS Services</p>
+                                <h4>Responsabilites</h4>
+                                <ul>
+                                    <li>MOCA's Console FrontEnd and node.js proxy server</li>
+                                    <li>The company's website</li>
+                                    <li>The blog</li>
+                                    <li>MOCA's PhoneGap SDK</li>
+                                    <li>Technical Support</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Implemented frontend for user segmentator with custom query builder</li>
+                                    <li>Several Analytics screens with charts built with Highcharts and D3</li>
+                                    <li>Created MOCA's PhoneGap sdk for iOS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period"><span class="from">01/11/14</span> - <span class="to">01/03/15</span></li>
+                    <li class="job">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3><strong>Co-Founder and Full Stack Developer</strong>, HeyGo Moments</h3>
+                                <p><strong>Tech Stack: </strong>LAMP stack, with Laravel 4 in the backend and hosted on AWS.</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Develop the Backend and the Database</li>
+                                    <li>Help out with Marketing campaigns</li>
+                                    <li>Design and develop the HeyGo API</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Built everything from 0</li>
+                                    <li>Developed OAuth2 Server for accessing the API</li>
+                                    <li>Created the first shared album application in Spain</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period"><span class="from">01/08/14</span> - <span class="to">01/03/15</span></li>
+                    <li class="job">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3><strong>Full Stack Developer</strong>, Mobile Software Factory </h3>
+                                <p><strong>Tech Stack: </strong>Laravel, PHP, Backbone.js, node.js, MySQL, AWS</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Company's website</li>
+                                    <li>Customer's web maintenance</li>
+                                    <li>FrontEnd and Backend Projects</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Fixed Client's Wordpress plugin</li>
+                                    <li>Met the MOCA team</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period"><span class="from">01/08/13</span> - <span class="to">01/08/14</span></li>
+                    <li class="job">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3><strong>Lead Full Stack Developer</strong>, Devinet </h3>
+                                <p><strong>Tech Stack: </strong>Symfony2, CodeIgniter, ExpressJS, AngularJS, MongoDB, MySQL, iOS, Android, Windows Azure services.</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Lead and Manage Client Web Projects</li>
+                                    <li>Help out with the Company's iOS and Android projects</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Draw2Santa</li>
+                                    <li>TPVenlaNube</li>
+                                    <li>myExam</li>
+                                    <li>Custom CMS made in Symfony 2</li>
+                                    <li>Devishop (Custom CRM)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period"><span class="from">01/11/12</span> - <span class="to">01/07/14</span></li>
+                    <li class="job">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3><strong>Customer Support</strong>, Now Computing</h3>
+                                <p><strong>Tech Stack: </strong>Bash, Python, Linux</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>StormFly's Kickstarter Campaign Support</li>
+                                    <li>StormFly Tech Support</li>
+                                    <li>StormFly Hacks and Uses</li>
+                                    <li>StormFly's FAQ</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Hacked Kickstarter's backer messaging system</li>
+                                    <li>Helped out at StormFly's booth at Minecon 2012</li>
+                                    <li>Travelled to Hong Kong to pick up the first StormFly batch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period"><span class="from">01/09/11</span> - <span class="to">01/11/12</span></li>
+                    <li class="job">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3><strong>AR/VR/HCI Intern</strong>, T-Systems</h3>
+                                <p><strong>Tech Stack: </strong>Unmanaged C++, OpenNI, OpenGL, iOS, Android, Qualcomm's Vuforia</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Add Microsoft Kinect support to T-Systems VRViewer</li>
+                                    <li>Add Inertia Sensor support to T-Systems VRViewer</li>
+                                    <li>AR Demos for School Book Editorials</li>
+                                    <li>HCI investigation</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>PsicoApp, Stroke Rehabilitation Simulator</li>
+                                    <li>AR Geography Book Demo</li>
+                                    <li>Kinect Module for VRViewer</li>
+                                    <li>Inertia Sensor Module for VRViewer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
