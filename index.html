@@ -34,6 +34,8 @@
         .experience .period {
             display: inline-block;
             position: relative;
+            width: 146px;
+            text-align: center;
             left: -103px;
             padding: 5px 10px;
             top: 48px;
@@ -54,9 +56,41 @@
         }
         
         .experience .job:last-child:before {
-            content: "";
-            z-index: -1;
-            border: none;
+            bottom: 0px;
+        }
+        .experience .job.last:before {
+            bottom: 0px;
+        }
+        
+        .dot {
+            position: absolute;
+            bottom: -8px;
+            left: -40px;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(229, 229, 229);
+            border-radius: 50%;
+        }
+        
+        .education .period, .education h4 {
+            margin: 0;
+        }
+        
+        .education {
+            position: relative;
+        }
+        
+        .education .period {
+            width: 100px;
+            display: inline-block;
+            position: relative;
+            top: 18px;
+            left: -49px;
+            text-align: center;
+        }
+
+        .education .degree {
+            margin: 10px 0;
         }
         
         @media (max-width: 768px) {
@@ -68,6 +102,11 @@
             .experience .job:before {
                 top: 10px;
                 bottom: -30px;
+            }
+            .education .period {
+                top: 0;
+                left: 0;
+                text-align: left;
             }
         }        
 
@@ -256,7 +295,7 @@
                         </div>
                     </li>
                     <li class="period"><span class="from">01/09/11</span> - <span class="to">01/11/12</span></li>
-                    <li class="job">
+                    <li class="job last">
                         <div class="row">
                             <div class="col-md-11 col-md-offset-1">
                                 <h3><strong>AR/VR/HCI Intern</strong>, T-Systems</h3>
@@ -277,8 +316,172 @@
                                 </ul>
                             </div>
                         </div>
+                        <a id="full-story" href="#" class="dot"></a>
+                    </li>
+                    <li class="period hidden"><span class="from">17/03/94</span> - <span class="to">Present</span></li>
+                    <li class="job hidden">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3>Kid</h3>
+                                <p><strong>Tech Stack: </strong> Macbook, Gameboy, Playstation, Raspberry Pi, other toys...</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Play and have fun</li>
+                                    <li>Go to the movies</li>
+                                    <li>Drive my gal crazy</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Photographic memory for Movies</li>
+                                    <li>Taken care of 5 cats</li>
+                                    <li>Found a career that I like</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period hidden"><span class="from">17/03/89</span> - <span class="to">17/03/94</span></li>
+                    <li class="job hidden">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3>Baby</h3>
+                                <p><strong>Tech Stack: </strong> Lego, Dinosaur toys...</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Eat, grow, vomit, poo</li>
+                                    <li>Annoy my sister</li>
+                                    <li>Play</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Memorized all of the known Dinosaurs</li>
+                                    <li>Became super secret Special Agent Steven</li>
+                                    <li>Acomplished several missions as Steven, all classified though</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period hidden"><span class="from">1616</span> - <span class="to">17/03/89</span></li>
+                    <li class="job hidden">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3>Member of the Void</h3>
+                                <p><strong>Tech Stack: </strong> none...</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>none</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>being voidy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="period hidden"><span class="from">1543</span> - <span class="to">1616</span></li>
+                    <li class="job hidden">
+                        <div class="row">
+                            <div class="col-md-11 col-md-offset-1">
+                                <h3>Japanese Warlord</h3>
+                                <p><strong>Tech Stack: </strong> katanas and stuff...</p>
+                                <h4>Responsabilities</h4>
+                                <ul>
+                                    <li>Rule Japan</li>
+                                    <li>Start Battles</li>
+                                    <li>Win Battles</li>
+                                    <li>Speak in Japanese</li>
+                                </ul>
+                                <h4>Achievements</h4>
+                                <ul>
+                                    <li>Having a katana</li>
+                                    <li>Using a katana</li>
+                                    <li>Speaking Japanese</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dot"></div>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="row cv-section">
+            <div class="col-md-8 col-md-offset-2 education">
+                <h2>Education</h2>
+                <div class="row degree">
+                    <p class="period">2008 - 2013</p>
+                    <div class="col-md-11 col-md-offset-1">
+                        <h4><strong>Multimedia Engineering</strong>, Universitat La Salle Ramon Llull </h4>
+                    </div>
+                </div>
+                <div class="row degree">
+                    
+                    <p class="period">2014 - Paused</p>
+                    
+                    <div class="col-md-11 col-md-offset-1">
+                        <h4><strong>Master in High Performance</strong>, Universitat La Salle Ramon Llull </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row cv-section">
+            <div class="col-md-8 col-md-offset-2 languages">
+                <h2>Languages</h2>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>English</td>
+                        <td>Native Language</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish</td>
+                        <td>Native Language</td>
+                    </tr>
+                    <tr>
+                        <td>Catalan</td>
+                        <td>Pretty Native Language</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="row cv-section">
+            <div class="col-md-8 col-md-offset-2 languages">
+                <h2>Profesional Programming Experience</h2>
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>3 years</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>HTML+CSS</td>
+                            <td>4 years</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>1 year</td>
+                        </tr>
+                        <tr>
+                            <td>Objective-C</td>
+                            <td>3 years</td>
+                        </tr>
+                        <tr>
+                            <td>Android</td>
+                            <td>3 years</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </div>
@@ -286,6 +489,27 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
+    
+    
+    <script>
+        console.log("######################################################");
+        console.log("######################################################");
+        console.log("##                                                  ##");
+        console.log("##  Curious fella... Click the dot at the end of    ##");
+        console.log("##  the timeline to read my full story :).          ##");
+        console.log("##                                                  ##");
+        console.log("######################################################");
+        console.log("######################################################");
+        
+        $(document).ready(function() {
+            $("#full-story").click(function(e) {
+                e.preventDefault();
+                $(this).hide();
+                $(".last").removeClass("last");
+                $(".hidden").removeClass("hidden");
+            });
+        })
+    </script>
 </body>
 
 </html>
