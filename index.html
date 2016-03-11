@@ -51,6 +51,24 @@
             left: -33px;
             bottom: -49px;
             border: 3px solid rgb(229, 229, 229);
+        }
+        
+        .experience .job:last-child:before {
+            content: "";
+            z-index: -1;
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .experience .period {
+                left: -40px;
+                top: 15px;
+            }
+            
+            .experience .job:before {
+                top: 10px;
+                bottom: -30px;
+            }
         }        
 
     </style>
