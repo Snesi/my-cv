@@ -45,7 +45,7 @@
             padding: 5px 10px;
             top: 48px;
             border-radius: 5px;
-            background-color: #EBE9E9;
+            background-color: #EBE9E9 !important;
         }
 
         .job {
@@ -59,7 +59,7 @@
             top: 40px;
             left: -33px;
             bottom: -49px;
-            border: 3px solid rgb(229, 229, 229);
+            border: 3px solid rgb(229, 229, 229) !important;
         }
 
         .experience .job:last-child:before {
@@ -76,7 +76,7 @@
             left: -40px;
             width: 20px;
             height: 20px;
-            background-color: rgb(229, 229, 229);
+            background-color: rgb(229, 229, 229) !important;
             border-radius: 50%;
         }
 
@@ -102,6 +102,10 @@
             margin: 10px 0;
         }
 
+        .pt-20 {
+            padding-top: 25px;
+        }
+
         @media (max-width: 768px) {
             .experience .period {
                 left: -40px;
@@ -119,23 +123,87 @@
                 text-align: left;
             }
         }
+
+        @media print {
+            body {
+                font-size: 12px;
+            }
+
+            .hidden-print {
+                display: none !important;
+            }
+
+            .profile-info {
+                padding: 0;
+            }
+
+            .cv-section {
+                margin: 0;
+            }
+
+            .experience .job {
+                margin-bottom: 14px;
+            }
+
+            .experience .period {
+                display: inline-block;
+                position: relative;
+                text-align: center;
+                left: 0;
+                top: 0;
+                width: auto;
+                padding: 0;
+                background-color: transparent !important;
+            }
+
+            .experience .job:before {
+                top: -16px;
+                left: -40px;
+                bottom: 0;
+            }
+
+            h1 {
+                font-size: 24pt;
+            }
+
+            h2,
+            h3,
+            h4 {
+                font-size: 12pt;
+                margin-top: 0px;
+                margin-bottom: 2px;
+            }
+
+            .mb-12 {
+                margin-bottom: 12px;
+            }
+        }
+
+        @page {
+            margin: 2cm 3cm;
+        }
+
+        @page :first {
+            margin-top: 0;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-
-            </div>
-        </nav>
-    </header>
     <div class="container">
-        <div class="row cv-section">
-            <div class="col-md-3 col-md-offset-2 col-sm-3 col-xs-6">
+        <div class="row cv-section pt-20">
+            <div class="col-md-3 col-md-offset-2 col-sm-3 col-xs-6 hidden-print">
                 <img src="images/me-squared.jpg" alt="David Domingo" class="img-responsive img-thumbnail img-profile">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 hidden-print">
+                <h1 class="cv-name">David Domingo</h1>
+                <ul class="profile-info">
+                    <li><i class="fa fa-envelope"></i> <a href="mailto:yo@epicdavid.com">yo@epicdavid.com</a></li>
+                    <li><i class="fa fa-github-square"></i> <a
+                            href="https://github.com/Snesi">https://github.com/Snesi</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-md-offset-2 visible-print">
                 <h1 class="cv-name">David Domingo</h1>
                 <ul class="profile-info">
                     <li><i class="fa fa-envelope"></i> <a href="mailto:yo@epicdavid.com">yo@epicdavid.com</a></li>
@@ -144,7 +212,7 @@
                 </ul>
             </div>
         </div>
-        <section class="row cv-section">
+        <section class="row cv-section mb-12">
             <div class="col-md-8 col-md-offset-2">
                 <h2>Profile</h2>
                 <p>
@@ -152,11 +220,12 @@
                     technologies, including Angular, Springboot and AWS.
                 </p>
                 <p>
-                    New tech addict, passionate about programming languages, 
+                    New tech addict, passionate about programming languages,
                     easy-going, fun and with a great sense of humor.
                 </p>
                 <p>
-                    <strong>Latest Stack Experience: </strong>Angular, Spring Boot, MySQL, AWS.
+                    <strong>Latest Stack Experience: </strong>SCSS, Angular (TypeScript), Spring Boot (Java), MySQL,
+                    AWS.
                 </p>
             </div>
         </section>
@@ -173,8 +242,7 @@
                                 <h4>Responsabilities</h4>
                                 <ul>
                                     <li>Architecting the frontend Angular apps</li>
-                                    <li>Designing and developing Spring Boot microservices</li>
-                                    <li>Designing and developing APIs for merchant integrations</li>
+                                    <li>Designing and developing internal APIs and APIs for merchant integrations</li>
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
@@ -196,8 +264,8 @@
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
-                                    <li>Developing v1 of the One Insurance web app</li>
-                                    <li>Developing v1 of the One Insurance website</li>
+                                    <li>Developed v1 of the One Insurance web app</li>
+                                    <li>Developed v1 of the One Insurance website</li>
                                 </ul>
                             </div>
                         </div>
@@ -210,15 +278,14 @@
                                 <p><strong>Tech Stack: </strong>jQuery, Bootstrap, Django, Twisted</p>
                                 <h4>Responsabilities</h4>
                                 <ul>
-                                    <li>Improving the FrontEnd of GetFinancing's funnel, portal and website.</li>
+                                    <li>Improving the FrontEnd of GetFinancing's funnel, merchant portal and marketing
+                                        tools.</li>
                                     <li>Adapting lender's funnel to our funnel.</li>
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
-                                    <li>Added cart summary and user info to the funnel for contextual information.</li>
-                                    <li>Fixed lender's css.</li>
-                                    <li>Added responsiveness to the funnel.</li>
-                                    <li>Redesigned the whole Portal.</li>
+                                    <li>Redesigned the customer financing application.</li>
+                                    <li>Redesigned the Merchant Portal.</li>
                                 </ul>
                             </div>
                         </div>
@@ -233,16 +300,12 @@
                                 <h4>Responsabilites</h4>
                                 <ul>
                                     <li>MOCA's Console FrontEnd and node.js proxy server</li>
-                                    <li>The company's main website</li>
-                                    <li>The blog</li>
                                     <li>MOCA's PhoneGap SDK</li>
-                                    <li>Technical Support</li>
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
                                     <li>Implemented frontend for user segmentator with custom query builder</li>
                                     <li>Several Analytics screens with charts built with Highcharts and D3</li>
-                                    <li>Created MOCA's PhoneGap sdk for iOS</li>
                                 </ul>
                             </div>
                         </div>
@@ -251,20 +314,19 @@
                     <li class="job">
                         <div class="row">
                             <div class="col-md-11 col-md-offset-1">
-                                <h3><strong>Co-Founder and Full Stack Developer</strong>, HeyGo Moments (Closed), Sant Cugat,
+                                <h3><strong>Co-Founder and Full Stack Developer</strong>, HeyGo Moments (Closed), Sant
+                                    Cugat,
                                     Spain</h3>
                                 <p><strong>Tech Stack: </strong>LAMP stack, with Laravel 4 in the backend and hosted on
                                     AWS.</p>
                                 <h4>Responsabilities</h4>
                                 <ul>
                                     <li>Architect the backend</li>
-                                    <li>Assist with Digital Marketing campaigns</li>
                                     <li>Design and develop the HeyGo API</li>
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
                                     <li>Built everything from 0</li>
-                                    <li>Developed OAuth2 Server for accessing the API</li>
                                     <li>Created the first shared album application in Spain</li>
                                 </ul>
                             </div>
@@ -274,19 +336,18 @@
                     <li class="job">
                         <div class="row">
                             <div class="col-md-11 col-md-offset-1">
-                                <h3><strong>Full Stack Developer</strong>, Mobile Software Factory (Closed), Sant Cugat, Spain
+                                <h3><strong>Full Stack Developer</strong>, Mobile Software Factory (Closed), Sant Cugat,
+                                    Spain
                                 </h3>
                                 <p><strong>Tech Stack: </strong>Laravel, PHP, Backbone.js, node.js, MySQL, AWS</p>
                                 <h4>Responsabilities</h4>
                                 <ul>
-                                    <li>Company's website</li>
                                     <li>Customer's web maintenance</li>
                                     <li>FrontEnd and Backend Projects</li>
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
                                     <li>Fixed Client's Wordpress plugin</li>
-                                    <li>Met the MOCA team</li>
                                 </ul>
                             </div>
                         </div>
@@ -305,11 +366,8 @@
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
-                                    <li>Draw2Santa</li>
-                                    <li>TPVenlaNube</li>
-                                    <li>myExam</li>
-                                    <li>Custom CMS made in Symfony 2</li>
-                                    <li>Devishop (Custom ERP)</li>
+                                    <li>Draw2Santa, TPVenlaNube, myExam, Custom CMS made with Symfony 2</li>
+                                    <li>Devishop (ERP for Spanish companies)</li>
                                 </ul>
                             </div>
                         </div>
@@ -324,14 +382,11 @@
                                 <ul>
                                     <li>StormFly's Kickstarter Campaign Support</li>
                                     <li>StormFly Tech Support</li>
-                                    <li>StormFly Hacks and Uses</li>
-                                    <li>StormFly's FAQ</li>
                                 </ul>
                                 <h4>Achievements</h4>
                                 <ul>
                                     <li>Automated Kickstarter's backer messaging system with Bash</li>
                                     <li>Helped out at StormFly's booth at Minecon 2012</li>
-                                    <li>Travelled to Hong Kong to pick up the first StormFly batch</li>
                                 </ul>
                             </div>
                         </div>
@@ -377,7 +432,7 @@
                                 <h4>Achievements</h4>
                                 <ul>
                                     <li>Photographic memory for Movies</li>
-                                    <li>Taken care of 5 cats</li>
+                                    <li>Looked after 5 cats</li>
                                     <li>Found a career that I like</li>
                                 </ul>
                             </div>
@@ -457,7 +512,8 @@
                 </div>
                 <div class="row degree">
                     <div class="col-md-12">
-                        <h4><strong>Master in High Performance Web</strong> (not completed), Universitat La Salle Ramon Llull </h4>
+                        <h4><strong>Master in High Performance Web</strong> (not completed), Universitat La Salle Ramon
+                            Llull </h4>
                     </div>
                 </div>
             </div>
